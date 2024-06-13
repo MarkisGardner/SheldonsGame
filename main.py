@@ -145,12 +145,13 @@ def print_tally(tally):
 
 # See PyCharm help at https://www.jetbrains.com/help/pycharm/
 print("Please enter the number of rounds you want play or enter I for instructions.")
-ans = int(input())
+ans = input()
 # Note: I am not going to do much testing to make sure they enter a number or I.
 if ans == 'I':
     instructions()
     print("Thank you for playing!")
     quit(0)
 else:
+    ans=int(ans)
     results = play_game(ans)
     print_tally(results)
