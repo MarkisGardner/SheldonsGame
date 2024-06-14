@@ -152,6 +152,6 @@ if ans == 'I':
     print("Thank you for playing!")
     quit(0)
 else:
-    ans=int(ans)
+    ans = int(ans)
     results = play_game(ans)
     print_tally(results)
